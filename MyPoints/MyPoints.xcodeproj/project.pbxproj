@@ -20,6 +20,8 @@
 		7918FF09158A7495002E7D9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FEEA158A7495002E7D9D /* Foundation.framework */; };
 		7918FF11158A7495002E7D9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7918FF0F158A7495002E7D9D /* InfoPlist.strings */; };
 		7918FF14158A7495002E7D9D /* MyPointsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918FF13158A7495002E7D9D /* MyPointsTests.m */; };
+		7918FF61158A86D0002E7D9D /* libCellreefFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF58158A74B6002E7D9D /* libCellreefFramework.a */; };
+		79A684D7158AA3BC00B56960 /* GPX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A684D6158AA3BC00B56960 /* GPX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,13 @@
 			remoteGlobalIDString = 7918FF38158A74B6002E7D9D;
 			remoteInfo = CellreefFrameworkTests;
 		};
+		7918FF5F158A86C7002E7D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7918FF52158A74B6002E7D9D /* CellreefFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7918FF27158A74B5002E7D9D;
+			remoteInfo = CellreefFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +76,7 @@
 		7918FF12158A7495002E7D9D /* MyPointsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPointsTests.h; sourceTree = "<group>"; };
 		7918FF13158A7495002E7D9D /* MyPointsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPointsTests.m; sourceTree = "<group>"; };
 		7918FF52158A74B6002E7D9D /* CellreefFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CellreefFramework.xcodeproj; path = ../CellreefFramework/CellreefFramework.xcodeproj; sourceTree = "<group>"; };
+		79A684D6158AA3BC00B56960 /* GPX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPX.framework; path = ../CellreefFramework/GPX.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A684D7158AA3BC00B56960 /* GPX.framework in Frameworks */,
+				7918FF61158A86D0002E7D9D /* libCellreefFramework.a in Frameworks */,
 				7918FEE9158A7495002E7D9D /* UIKit.framework in Frameworks */,
 				7918FEEB158A7495002E7D9D /* Foundation.framework in Frameworks */,
 				7918FEED158A7495002E7D9D /* CoreGraphics.framework in Frameworks */,
@@ -116,6 +128,7 @@
 		7918FEE7158A7495002E7D9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79A684D6158AA3BC00B56960 /* GPX.framework */,
 				7918FEE8158A7495002E7D9D /* UIKit.framework */,
 				7918FEEA158A7495002E7D9D /* Foundation.framework */,
 				7918FEEC158A7495002E7D9D /* CoreGraphics.framework */,
@@ -190,6 +203,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7918FF60158A86C7002E7D9D /* PBXTargetDependency */,
 			);
 			name = MyPoints;
 			productName = MyPoints;
@@ -328,6 +342,11 @@
 			target = 7918FEE3158A7495002E7D9D /* MyPoints */;
 			targetProxy = 7918FF0A158A7495002E7D9D /* PBXContainerItemProxy */;
 		};
+		7918FF60158A86C7002E7D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CellreefFramework;
+			targetProxy = 7918FF5F158A86C7002E7D9D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -406,10 +425,20 @@
 		7918FF18158A7495002E7D9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nathan Hill-Haimes (WB982FA3R3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nathan Hill-Haimes (WB982FA3R3)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../CellreefFramework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyPoints/MyPoints-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = "../**";
 				INFOPLIST_FILE = "MyPoints/MyPoints-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C9C1B294-63E0-421F-96ED-C2A32B24B759";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C9C1B294-63E0-421F-96ED-C2A32B24B759";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -417,10 +446,20 @@
 		7918FF19158A7495002E7D9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nathan Hill-Haimes";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nathan Hill-Haimes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../CellreefFramework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyPoints/MyPoints-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = "../**";
 				INFOPLIST_FILE = "MyPoints/MyPoints-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D5AAF082-D2D5-4A29-994E-5F025C269E4E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D5AAF082-D2D5-4A29-994E-5F025C269E4E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -478,6 +517,7 @@
 				7918FF19158A7495002E7D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7918FF1A158A7495002E7D9D /* Build configuration list for PBXNativeTarget "MyPointsTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +526,7 @@
 				7918FF1C158A7495002E7D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

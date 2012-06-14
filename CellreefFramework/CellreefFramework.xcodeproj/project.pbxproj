@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7918FF2C158A74B5002E7D9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF2B158A74B5002E7D9D /* Foundation.framework */; };
-		7918FF32158A74B5002E7D9D /* CellreefFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918FF31158A74B5002E7D9D /* CellreefFramework.m */; };
 		7918FF3A158A74B6002E7D9D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF39158A74B6002E7D9D /* SenTestingKit.framework */; };
 		7918FF3C158A74B6002E7D9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF3B158A74B6002E7D9D /* UIKit.framework */; };
 		7918FF3D158A74B6002E7D9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF2B158A74B5002E7D9D /* Foundation.framework */; };
 		7918FF40158A74B6002E7D9D /* libCellreefFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF28158A74B5002E7D9D /* libCellreefFramework.a */; };
 		7918FF46158A74B6002E7D9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7918FF44158A74B6002E7D9D /* InfoPlist.strings */; };
 		7918FF49158A74B6002E7D9D /* CellreefFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918FF48158A74B6002E7D9D /* CellreefFrameworkTests.m */; };
+		7918FF65158A8C28002E7D9D /* CellReef.h in Headers */ = {isa = PBXBuildFile; fileRef = 7918FF63158A8C28002E7D9D /* CellReef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7918FF66158A8C28002E7D9D /* CellReef.m in Sources */ = {isa = PBXBuildFile; fileRef = 7918FF64158A8C28002E7D9D /* CellReef.m */; };
+		7918FF68158A8EBB002E7D9D /* GPX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF67158A8EBB002E7D9D /* GPX.framework */; };
+		7918FF69158A8EBB002E7D9D /* GPX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF67158A8EBB002E7D9D /* GPX.framework */; };
+		7918FF6B158A9344002E7D9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF6A158A9344002E7D9D /* CoreGraphics.framework */; };
+		79A684DA158AA4F600B56960 /* CRLocationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A684D8158AA4F600B56960 /* CRLocationHandler.h */; };
+		79A684DB158AA4F600B56960 /* CRLocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A684D9158AA4F600B56960 /* CRLocationHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +37,6 @@
 		7918FF28158A74B5002E7D9D /* libCellreefFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCellreefFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7918FF2B158A74B5002E7D9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7918FF2F158A74B5002E7D9D /* CellreefFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CellreefFramework-Prefix.pch"; sourceTree = "<group>"; };
-		7918FF30158A74B5002E7D9D /* CellreefFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellreefFramework.h; sourceTree = "<group>"; };
-		7918FF31158A74B5002E7D9D /* CellreefFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellreefFramework.m; sourceTree = "<group>"; };
 		7918FF38158A74B6002E7D9D /* CellreefFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CellreefFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7918FF39158A74B6002E7D9D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7918FF3B158A74B6002E7D9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -40,6 +44,12 @@
 		7918FF45158A74B6002E7D9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7918FF47158A74B6002E7D9D /* CellreefFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellreefFrameworkTests.h; sourceTree = "<group>"; };
 		7918FF48158A74B6002E7D9D /* CellreefFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellreefFrameworkTests.m; sourceTree = "<group>"; };
+		7918FF63158A8C28002E7D9D /* CellReef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellReef.h; sourceTree = "<group>"; };
+		7918FF64158A8C28002E7D9D /* CellReef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellReef.m; sourceTree = "<group>"; };
+		7918FF67158A8EBB002E7D9D /* GPX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPX.framework; sourceTree = "<group>"; };
+		7918FF6A158A9344002E7D9D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79A684D8158AA4F600B56960 /* CRLocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLocationHandler.h; sourceTree = "<group>"; };
+		79A684D9158AA4F600B56960 /* CRLocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLocationHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7918FF6B158A9344002E7D9D /* CoreGraphics.framework in Frameworks */,
 				7918FF2C158A74B5002E7D9D /* Foundation.framework in Frameworks */,
+				7918FF68158A8EBB002E7D9D /* GPX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +71,7 @@
 				7918FF3C158A74B6002E7D9D /* UIKit.framework in Frameworks */,
 				7918FF3D158A74B6002E7D9D /* Foundation.framework in Frameworks */,
 				7918FF40158A74B6002E7D9D /* libCellreefFramework.a in Frameworks */,
+				7918FF69158A8EBB002E7D9D /* GPX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,8 @@
 		7918FF2A158A74B5002E7D9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7918FF6A158A9344002E7D9D /* CoreGraphics.framework */,
+				7918FF67158A8EBB002E7D9D /* GPX.framework */,
 				7918FF2B158A74B5002E7D9D /* Foundation.framework */,
 				7918FF39158A74B6002E7D9D /* SenTestingKit.framework */,
 				7918FF3B158A74B6002E7D9D /* UIKit.framework */,
@@ -97,9 +112,11 @@
 		7918FF2D158A74B5002E7D9D /* CellreefFramework */ = {
 			isa = PBXGroup;
 			children = (
-				7918FF30158A74B5002E7D9D /* CellreefFramework.h */,
-				7918FF31158A74B5002E7D9D /* CellreefFramework.m */,
 				7918FF2E158A74B5002E7D9D /* Supporting Files */,
+				7918FF63158A8C28002E7D9D /* CellReef.h */,
+				7918FF64158A8C28002E7D9D /* CellReef.m */,
+				79A684D8158AA4F600B56960 /* CRLocationHandler.h */,
+				79A684D9158AA4F600B56960 /* CRLocationHandler.m */,
 			);
 			path = CellreefFramework;
 			sourceTree = "<group>";
@@ -138,6 +155,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7918FF65158A8C28002E7D9D /* CellReef.h in Headers */,
+				79A684DA158AA4F600B56960 /* CRLocationHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7918FF32158A74B5002E7D9D /* CellreefFramework.m in Sources */,
+				7918FF66158A8C28002E7D9D /* CellReef.m in Sources */,
+				79A684DB158AA4F600B56960 /* CRLocationHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +338,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/CellreefFramework.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CellreefFramework/CellreefFramework-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/GPX.framework\"/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -330,8 +355,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/CellreefFramework.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CellreefFramework/CellreefFramework-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/GPX.framework\"/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -344,6 +374,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CellreefFramework/CellreefFramework-Prefix.pch";
@@ -359,6 +390,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CellreefFramework/CellreefFramework-Prefix.pch";
@@ -387,6 +419,7 @@
 				7918FF4E158A74B6002E7D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7918FF4F158A74B6002E7D9D /* Build configuration list for PBXNativeTarget "CellreefFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +428,7 @@
 				7918FF51158A74B6002E7D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
