@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface CRLocationHandler : NSObject
+@interface CRLocationHandler : NSObject <CLLocationManagerDelegate>
 @property (strong) CLLocation *latestKnownLocation;
+
++ (id)sharedLocationHandler; 
+- (BOOL)isReceivingLocationUpdates; 
+- (void)startUpdatingLocation;
+- (void)stopUpdatingLocation;  
 @end

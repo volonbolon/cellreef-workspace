@@ -7,6 +7,7 @@
 //
 
 #import "CellReef.h"
+#import "CRLocationHandler.h"
 #import <GPX/GPX.h>
 
 @implementation CellReef
@@ -33,6 +34,8 @@
   [track newTrackpointWithLatitude:35.658609f longitude:139.745447f];
   [track newTrackpointWithLatitude:35.758609f longitude:139.745447f];
   [track newTrackpointWithLatitude:35.828609f longitude:139.745447f]; 
+  
+  [[CRLocationHandler sharedLocationHandler] startUpdatingLocation];
   
   NSLog(@"%@", root);
 }
