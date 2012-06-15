@@ -53,6 +53,9 @@
 		79E25066158BD98F0056B345 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 79E25048158BD98F0056B345 /* UIImageView+AFNetworking.h */; };
 		79E25067158BD98F0056B345 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E25049158BD98F0056B345 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		79E25068158BD98F0056B345 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E25049158BD98F0056B345 /* UIImageView+AFNetworking.m */; };
+		79E2506F158BDD850056B345 /* CRHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 79E2506D158BDD840056B345 /* CRHttpClient.h */; };
+		79E25070158BDD850056B345 /* CRHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E2506E158BDD840056B345 /* CRHttpClient.m */; };
+		79E25071158BDD850056B345 /* CRHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E2506E158BDD840056B345 /* CRHttpClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +107,8 @@
 		79E25047158BD98F0056B345 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		79E25048158BD98F0056B345 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		79E25049158BD98F0056B345 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		79E2506D158BDD840056B345 /* CRHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHttpClient.h; sourceTree = "<group>"; };
+		79E2506E158BDD840056B345 /* CRHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRHttpClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +179,8 @@
 				7918FF64158A8C28002E7D9D /* CellReef.m */,
 				79A684D8158AA4F600B56960 /* CRLocationHandler.h */,
 				79A684D9158AA4F600B56960 /* CRLocationHandler.m */,
+				79E2506D158BDD840056B345 /* CRHttpClient.h */,
+				79E2506E158BDD840056B345 /* CRHttpClient.m */,
 			);
 			path = CellreefFramework;
 			sourceTree = "<group>";
@@ -253,6 +260,7 @@
 				79E25060158BD98F0056B345 /* AFURLConnectionOperation.h in Headers */,
 				79E25063158BD98F0056B345 /* AFXMLRequestOperation.h in Headers */,
 				79E25066158BD98F0056B345 /* UIImageView+AFNetworking.h in Headers */,
+				79E2506F158BDD850056B345 /* CRHttpClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +373,7 @@
 				79E25061158BD98F0056B345 /* AFURLConnectionOperation.m in Sources */,
 				79E25064158BD98F0056B345 /* AFXMLRequestOperation.m in Sources */,
 				79E25067158BD98F0056B345 /* UIImageView+AFNetworking.m in Sources */,
+				79E25070158BDD850056B345 /* CRHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +392,7 @@
 				79E25062158BD98F0056B345 /* AFURLConnectionOperation.m in Sources */,
 				79E25065158BD98F0056B345 /* AFXMLRequestOperation.m in Sources */,
 				79E25068158BD98F0056B345 /* UIImageView+AFNetworking.m in Sources */,
+				79E25071158BDD850056B345 /* CRHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

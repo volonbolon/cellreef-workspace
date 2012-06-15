@@ -7,6 +7,7 @@
 //
 
 #import "CRLocationHandler.h"
+#import "CRHttpClient.h"
 #import <GPX/GPX.h>
 
 static NSString *const kLatKey = @"lat";
@@ -194,5 +195,21 @@ static NSString *const kCourseKey = @"course";
     [wp setVerticalDilution:[[location objectForKey:kVerticalAccuracyKey] floatValue]]; 
     [wp setTime:[location objectForKey:kTimestampKey]]; 
   }
+  
+  NSData *requestData = [[root gpx] dataUsingEncoding:NSASCIIStringEncoding];
+  
+  NSDictionary *parameters = [[NSDictionary alloc] initWithObjectsAndKeys:requestData, @"payload", nil]; 
+  
+  CRHttpClient *client = [CRHttpClient sharedClient]; 
+  client.parameterEncoding = CRGPXParameterEncoding; 
+  
+  [client postPath:@"/api/v1/locations"
+        parameters:parameters
+           success:^(AFHTTPRequestOperation *operation, id responseObject) {
+             NSLog(@"responseObject: %@", responseObject); 
+           }
+           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+             NSLog(@"error: %@", error); 
+           }]; 
 }
 @end
