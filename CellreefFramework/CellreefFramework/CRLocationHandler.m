@@ -8,6 +8,10 @@
 
 #import "CRLocationHandler.h"
 
+
 @implementation CRLocationHandler
+@synthesize latestKnownLocation; 
+
+
 
 @end

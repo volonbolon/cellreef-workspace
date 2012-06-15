@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface CRLocationHandler : NSObject
-
+@property (strong) CLLocation *latestKnownLocation;
 @end

@@ -21,6 +21,7 @@
 		7918FF6B158A9344002E7D9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7918FF6A158A9344002E7D9D /* CoreGraphics.framework */; };
 		79A684DA158AA4F600B56960 /* CRLocationHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A684D8158AA4F600B56960 /* CRLocationHandler.h */; };
 		79A684DB158AA4F600B56960 /* CRLocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A684D9158AA4F600B56960 /* CRLocationHandler.m */; };
+		79A684DE158AA5A400B56960 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A684DD158AA5A400B56960 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		7918FF6A158A9344002E7D9D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		79A684D8158AA4F600B56960 /* CRLocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLocationHandler.h; sourceTree = "<group>"; };
 		79A684D9158AA4F600B56960 /* CRLocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLocationHandler.m; sourceTree = "<group>"; };
+		79A684DD158AA5A400B56960 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A684DE158AA5A400B56960 /* CoreLocation.framework in Frameworks */,
 				7918FF6B158A9344002E7D9D /* CoreGraphics.framework in Frameworks */,
 				7918FF2C158A74B5002E7D9D /* Foundation.framework in Frameworks */,
 				7918FF68158A8EBB002E7D9D /* GPX.framework in Frameworks */,
@@ -100,6 +103,7 @@
 		7918FF2A158A74B5002E7D9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79A684DD158AA5A400B56960 /* CoreLocation.framework */,
 				7918FF6A158A9344002E7D9D /* CoreGraphics.framework */,
 				7918FF67158A8EBB002E7D9D /* GPX.framework */,
 				7918FF2B158A74B5002E7D9D /* Foundation.framework */,
